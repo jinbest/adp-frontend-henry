@@ -16,8 +16,10 @@
     "noEmit": true,
     "jsx": "react",
     "noImplicitAny": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", ".circleci", "**/*.spec.ts", "build"]
+  "exclude": ["node_modules", "dist", ".circleci", "build"]
 }

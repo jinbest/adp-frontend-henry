@@ -17,7 +17,7 @@
         "jsx": "react",
         "noImplicitAny": true,
         "useDefineForClassFields": true,
-        "noUnusedLocals": true,
+        "noUnusedLocals": false,
         "noUnusedParameters": true
     },
     "include": ["src"],

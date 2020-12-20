@@ -1,6 +1,7 @@
 import React from 'react'
 import { CardMobile } from '../../components'
 import { Grid, Box } from '@material-ui/core'
+
 /* eslint-disable */
 type Props = {
   subDomain?: string;

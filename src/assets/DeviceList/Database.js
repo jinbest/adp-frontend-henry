@@ -21,6 +21,9 @@ import positive from './img/devicelist/positive.png'
 import amazing from './img/devicelist/amazing.png'
 import proudly from './img/devicelist/proudly.png'
 
+// bounce image
+import bounce from './img/bounce.png'
+
 const cardMobileData = [
   { img: trade, title: 'TRADE', btnTitle: 'Trade my Device' },
   { img: repair, title: 'REPAIR', btnTitle: 'Repair my Device' },
@@ -70,6 +73,16 @@ const devicelistData = [
   { img: proudly, title: 'Proudly Canadian', content: 'Canadian owned and Canadian based.' },
 ]
 
+const bounceData = {
+  img: bounce,
+  title: 'Protect Your Device with Bounce',
+  content: 'We\'ve partnered with Bounce to offer you a low cost high value protection plan for your new and used devices.',
+  subtitle: 'As low as $39/year!',
+  subcontent: '24 Hour Refunds',
+  subcontentData: ['No Deductible', 'Covers New and Used Phones'],
+  btnTitle: 'Insure My Device'
+}
+
 const colorPalle = {
   orange: '#F36B26'
 }
@@ -80,5 +93,6 @@ export {
   cardFixData,
   contentFixData,
   popularCardData,
-  devicelistData
+  devicelistData,
+  bounceData
 }

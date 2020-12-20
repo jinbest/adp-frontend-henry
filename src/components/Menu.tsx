@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-// import Button from '@material-ui/core/Button';
 import Menu, { MenuProps } from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -20,26 +19,26 @@ const StyledMenu = withStyles({
     getContentAnchorEl={null}
     anchorOrigin={{
       vertical: 'bottom',
-      horizontal: 'center',
+      horizontal: 'right',
     }}
     transformOrigin={{
       vertical: 'top',
-      horizontal: 'center',
+      horizontal: 'right',
     }}
     {...props}
   />
 ));
 
-const StyledMenuItem = withStyles((theme) => ({
-  root: {
-    '&:focus': {
-      backgroundColor: theme.palette.primary.main,
-      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: theme.palette.common.white,
-      },
-    },
-  },
-}))(MenuItem);
+// const StyledMenuItem = withStyles((theme) => ({
+//   root: {
+//     '&:focus': {
+//       backgroundColor: theme.palette.primary.main,
+//       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
+//         color: theme.palette.common.white,
+//       },
+//     },
+//   },
+// }))(MenuItem);
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -54,15 +53,6 @@ export default function CustomizedMenus() {
 
   return (
     <div>
-      {/* <Button
-        aria-controls="customized-menu"
-        aria-haspopup="true"
-        variant="contained"
-        color="primary"
-        onClick={handleClick}
-      >
-        Open Menu
-      </Button> */}
       <Button 
         title='Find a Store' 
         bgcolor='#054DFA' 
@@ -78,7 +68,7 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem>
+        {/* <StyledMenuItem>
           <ListItemIcon>
             <SendIcon fontSize="small" />
           </ListItemIcon>
@@ -95,7 +85,23 @@ export default function CustomizedMenus() {
             <InboxIcon fontSize="small" />
           </ListItemIcon>
           <ListItemText primary="Inbox" />
-        </StyledMenuItem>
+        </StyledMenuItem> */}
+        <div style={{display: 'flex'}}>
+          <div style={{textAlign: 'left', display: 'flex', flexDirection: 'column'}}>
+            <p>MY STORE</p>
+            <p>71 Greenford Avenue Winninpeg, MB RiR 1R1 (204) 555-5555</p>
+            <a>View Store Details</a>
+            <a>Get Directions</a>
+            <Button 
+              title='Book Repair' 
+              bgcolor='#054DFA' 
+              borderR='20px' 
+              width='40px'
+              height='30px'
+              margin='0'
+            />
+          </div>
+        </div>
       </StyledMenu>
     </div>
   );

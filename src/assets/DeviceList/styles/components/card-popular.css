@@ -8,14 +8,35 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
  }
 
- .card-popular img {
-   width: 80%;
-   margin: 0 auto;
-   margin-top: 20px;
- }
+.card-popular img {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
  
- .card-popular .title {
-   color: black;
-   text-align: left;
-   margin: 20px;
- }
+.card-popular .title {
+  color: black;
+  text-align: left;
+  margin: 20px 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-popular .price-div {
+  display: flex;
+  margin: 0 20px;
+}
+
+.card-popular .subtitle {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 10px 0 0;
+}
+
+.card-popular .price {
+  color: #054DFA;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 20px;
+}

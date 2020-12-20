@@ -5,12 +5,13 @@ import SearchIcon from '@material-ui/icons/Search';
 type Props = {
   color?: string;
   bgcolor?: string;
+  border?: string;
 }
 
-const Search = ({color, bgcolor}: Props) => {
+const Search = ({color, bgcolor, border}: Props) => {
 
   return (
-      <Box className="search-container" style={{background: bgcolor}}>
+      <Box className="search-container" style={{background: bgcolor, border: `1px solid ${border}`}}>
         <InputBase 
           className="search-input" 
           style={{color: color}} 

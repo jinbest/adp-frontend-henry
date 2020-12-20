@@ -56,6 +56,12 @@
   color: black;
 }
 
+.search-div {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
 .nav-div {
   margin-right: 60px;
   display: flex;

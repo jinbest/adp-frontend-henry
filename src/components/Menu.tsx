@@ -1,12 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Menu, { MenuProps } from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
 import Button from './Button'
 
 const StyledMenu = withStyles({
@@ -28,17 +22,6 @@ const StyledMenu = withStyles({
     {...props}
   />
 ));
-
-// const StyledMenuItem = withStyles((theme) => ({
-//   root: {
-//     '&:focus': {
-//       backgroundColor: theme.palette.primary.main,
-//       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-//         color: theme.palette.common.white,
-//       },
-//     },
-//   },
-// }))(MenuItem);
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -68,30 +51,16 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        {/* <StyledMenuItem>
-          <ListItemIcon>
-            <SendIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText primary="Sent mail" />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-            <DraftsIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText primary="Drafts" />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-            <InboxIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
-        </StyledMenuItem> */}
-        <div style={{display: 'flex'}}>
-          <div style={{textAlign: 'left', display: 'flex', flexDirection: 'column'}}>
-            <p>MY STORE</p>
-            <p>71 Greenford Avenue Winninpeg, MB RiR 1R1 (204) 555-5555</p>
-            <a>View Store Details</a>
-            <a>Get Directions</a>
+        <div className='menu-content-div'>
+          <div className='left-content'>
+            <div className='content-block'>
+              <p className='title'>MY STORE</p>
+              <p className='content'>71 Greenford Avenue Winninpeg, MB RiR 1R1 (204) 555-5555</p>
+            </div>
+            <div className='content-block'>
+              <a className='link'>View Store Details</a>
+              <a className='link'>Get Directions</a>
+            </div>
             <Button 
               title='Book Repair' 
               bgcolor='#054DFA' 

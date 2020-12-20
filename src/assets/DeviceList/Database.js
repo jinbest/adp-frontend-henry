@@ -21,6 +21,9 @@ import positive from './img/devicelist/positive.png'
 import amazing from './img/devicelist/amazing.png'
 import proudly from './img/devicelist/proudly.png'
 
+// bounce image
+import bounce from './img/bounce.png'
+
 const cardMobileData = [
   { img: trade, title: 'TRADE', btnTitle: 'Trade my Device' },
   { img: repair, title: 'REPAIR', btnTitle: 'Repair my Device' },
@@ -70,8 +73,51 @@ const devicelistData = [
   { img: proudly, title: 'Proudly Canadian', content: 'Canadian owned and Canadian based.' },
 ]
 
+const bounceData = {
+  img: bounce,
+  title: 'Protect Your Device with Bounce',
+  content: 'We\'ve partnered with Bounce to offer you a low cost high value protection plan for your new and used devices.',
+  subtitle: 'As low as $39/year!',
+  subcontent: '24 Hour Refunds',
+  subcontentData: ['No Deductible', 'Covers New and Used Phones'],
+  btnTitle: 'Insure My Device'
+}
+
+const whyCustomersData = [
+  { 
+    score: 5, 
+    days: '3 days ago', 
+    content: 'This was by far the easiest way to sell your old cell phone. Simple fast and got a very good price for my phone.',
+    reviewer: 'Philip Sizemore'
+  },
+  {
+    score: 4,
+    days: '6 days ago',
+    content: 'Super easy to use and quick too!',
+    reviewer: 'Anonymous'
+  },
+  { 
+    score: 5, 
+    days: '3 days ago', 
+    content: 'This was by far the easiest way to sell your old cell phone. Simple fast and got a very good price for my phone.',
+    reviewer: 'Philip Sizemore'
+  },
+]
+
 const colorPalle = {
   orange: '#F36B26'
+}
+
+const navItemsData = [
+  { href: 'trade', text: 'Trade', isActive: false },
+  { href: 'repair', text: 'Repair', isActive: false },
+  { href: 'buy', text: 'Buy', isActive: false },
+  { href: 'protect', text: 'Protect', isActive: false },
+]
+
+const brandItemsData = {
+  left: ['BUSINESS', 'FINANCING'],
+  right: [ '204.221.5898', 'ENGLISH', 'LOG IN' ]
 }
 
 export {
@@ -80,5 +126,9 @@ export {
   cardFixData,
   contentFixData,
   popularCardData,
-  devicelistData
+  devicelistData,
+  bounceData,
+  whyCustomersData,
+  navItemsData,
+  brandItemsData
 }

@@ -1,4 +1,53 @@
 .header {
-  background-color: blue;
-  color: white;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.2);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+}
+
+.header .navbar {
+  padding: 0;
+  height: 85px;
+}
+
+.header-brand {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  padding: 0 20px;
+  margin: 0 auto;
+  left: 0px;
+  top: 0px;
+  background-color: #054DFA;
+}
+
+.container-header {
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-top: 35px;
+  height: 85px;
+}
+
+.container-header .text-1 {
+  font-size: 15px;
+  margin: 20px 20px;
+}
+
+.container-header .text-2 {
+  font-size: 15px;
+  margin: 2px 20px;
+  display: block;
+  color: black;
 }

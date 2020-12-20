@@ -6,11 +6,12 @@ type Props = {
   bgcolor?: string;
   txcolor?: string;
   borderR?: string;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
-const Button  = ({title, bgcolor, txcolor, borderR}: Props) => {
-  return (    
-    <button style={{backgroundColor: bgcolor, color: txcolor, borderRadius: borderR}} className='button'>
+const Button  = ({title, bgcolor, txcolor, borderR, onClick}: Props) => {
+  return (
+    <button onClick={onClick} style={{backgroundColor: bgcolor, color: txcolor, borderRadius: borderR}} className='button'>
       {title}
     </button>
   )

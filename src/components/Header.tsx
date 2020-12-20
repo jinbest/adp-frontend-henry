@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import {Button, Search} from '../components'
+import {Button, Search, Menu} from '../components'
 
 /*eslint-disable*/
 type PropsNavItemLink = {
@@ -67,7 +67,8 @@ const Header = ({subDomain}: PropsHeader) => {
               return <NavItemLink item={item} key={index} />
             })}
           </ul>
-          <Button title='Find a Store' bgcolor='#054DFA' borderR='20px'/>
+          {/* <Button title='Find a Store' bgcolor='#054DFA' borderR='20px'/> */}
+          <Menu />
           <img src={storeImg.default} />
         </div>
       </div>

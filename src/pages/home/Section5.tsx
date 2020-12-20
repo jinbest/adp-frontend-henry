@@ -21,7 +21,7 @@ const Section5 = ({subDomain}: Props) => {
         <div style={{display: 'flex'}}>
           <p>{bounceData.subcontent}</p>
           <ul style={{display: 'flex'}}>
-            {bounceData.subcontentData.map((item, index) => {
+            {bounceData.subcontentData.map((item:any, index:number) => {
               return (
                 <li key={index} style={{margin: '0 20px'}}>{item}</li>
               )

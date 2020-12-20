@@ -83,6 +83,27 @@ const bounceData = {
   btnTitle: 'Insure My Device'
 }
 
+const whyCustomersData = [
+  { 
+    score: 5, 
+    days: '3 days ago', 
+    content: 'This was by far the easiest way to sell your old cell phone. Simple fast and got a very good price for my phone.',
+    reviewer: 'Philip Sizemore'
+  },
+  {
+    score: 4,
+    days: '6 days ago',
+    content: 'Super easy to use and quick too!',
+    reviewer: 'Anonymous'
+  },
+  { 
+    score: 5, 
+    days: '3 days ago', 
+    content: 'This was by far the easiest way to sell your old cell phone. Simple fast and got a very good price for my phone.',
+    reviewer: 'Philip Sizemore'
+  },
+]
+
 const colorPalle = {
   orange: '#F36B26'
 }
@@ -94,5 +115,6 @@ export {
   contentFixData,
   popularCardData,
   devicelistData,
-  bounceData
+  bounceData,
+  whyCustomersData
 }

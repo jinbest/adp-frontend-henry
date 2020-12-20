@@ -5,7 +5,7 @@ type Props = {
   subDomain: string;
 }
 
-const Home: React.FC<Props> = ({subDomain}) => {
+const Home = ({subDomain}: Props) => {
   
   return (
     <div className='homepage'>

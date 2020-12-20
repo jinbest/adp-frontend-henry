@@ -6,7 +6,7 @@ type Props = {
   txcolor?: string;
 }
 
-const Button: React.FC<Props> = ({ title, bgcolor, txcolor }) => {
+const Button = ({title, bgcolor, txcolor}: Props) => {
   return (
     <button style={{backgroundColor: bgcolor, color: txcolor}}>
       {title}

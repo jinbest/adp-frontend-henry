@@ -7,7 +7,7 @@ type Props = {
   btnTitle: string;
 }
 
-const CardMobile: React.FC<Props> = ({title, img, btnTitle}) => {
+const CardMobile = ({title, img, btnTitle}: Props) => {
   
   return (
     <div className='card-mobile'>

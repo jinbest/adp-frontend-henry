@@ -4,7 +4,10 @@ import {Section1} from './'
 const Home: React.FC = () => {
   return (
     <div className='homepage'>
-      <Section1 />
+      Homepage
+      <div style={{padding: '0 20px'}}>
+        <Section1 />
+      </div>
     </div>
   )
 }

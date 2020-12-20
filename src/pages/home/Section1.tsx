@@ -6,7 +6,9 @@ type Props = {
 }
 
 const Section1: React.FC<Props> = ({subDomain}) => {
-  console.log('section1', subDomain)
+  const cardMobileData = require(`../../assets/${subDomain}/Database`);
+  console.log('cardMobileData', cardMobileData);
+  
   return (
     <section>
       <div>section1</div>

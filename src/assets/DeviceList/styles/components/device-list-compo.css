@@ -9,8 +9,11 @@
 
 .device-list-component .title {
   color: black;
+  margin-bottom: 6px;
 }
 
 .device-list-component .content {
   color: black;
+  line-height: 1.2;
+  margin: 0;
 }

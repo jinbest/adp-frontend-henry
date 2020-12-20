@@ -2,7 +2,7 @@
   margin: 3rem 0 !important;
 }
 .mg-t-7 {
-  margin: 7rem 0 !important;
+  margin: 7rem auto !important;
 }
 .pd-t-4 {
   padding: 4rem 0;
@@ -10,21 +10,23 @@
 .white {
   color: white;
 }
+.bold {
+  font-weight: 900 !important;
+}
 .black {
   color: black;
 }
 .f24 {
   font-size: 28px !important;
 }
-.f22 {
-  font-size: 22px !important;
+.f40 {
+  font-size: 40px !important;
 }
 .Container {
   max-width: 1440px;
   position: relative;
   display: block !important;
-  margin: 2rem 0;
-  margin: auto !important;
+  margin: 2rem auto !important;
   padding: 0 2rem;
 }
 
@@ -85,9 +87,30 @@
   background-image: url('../../img/section3-bg.png');
 }
 .cart-device-list {
-  max-width: 300px;
+  max-width: 280px;
+  margin: auto;
   width: 100%;
 }
 .section4-button {
   width: 316px;
+}
+
+.section4-title {
+  max-width: 615px;
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .section4-button {
+    margin: auto;
+    text-align: center;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }

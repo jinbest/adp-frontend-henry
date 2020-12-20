@@ -10,11 +10,7 @@ const Home = ({subDomain}: Props) => {
 
   return (
     <Container className="Homepage">
-    <div className='homepage'>
-      <div style={{padding: '0 20px'}}>
-        <Section1 subDomain={subDomain}/>
-      </div>
-    </div>
+      <Section1 subDomain={subDomain}/>
     </Container>
   )
 }

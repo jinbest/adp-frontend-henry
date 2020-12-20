@@ -30,4 +30,11 @@ const cardMobileData = [
 export {
   cardMobileData,
   // cardFixData
+const colorPalle = {
+  orange: '#F36B26'
+}
+
+export {
+  cardMobileData,
+  colorPalle
 }

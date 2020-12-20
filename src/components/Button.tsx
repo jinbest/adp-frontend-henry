@@ -8,7 +8,7 @@ type Props = {
 
 const Button  = ({title, bgcolor, txcolor}: Props) => {
   return (    
-    <button style={{backgroundColor: bgcolor, color: txcolor}}>
+    <button style={{backgroundColor: bgcolor, color: txcolor}} className='button'>
       {title}
     </button>
   )

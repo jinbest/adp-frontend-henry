@@ -16,7 +16,7 @@ const Section1 = ({subDomain}: Props) => {
           return (
             <Grid item xs={6} sm={3} spacing={2}>
               <Box className="cart-mobile-container">
-                <CardMobile title={item.title} img={item.img} btnTitle={item.btnTitle} key={index}/>
+                <CardMobile title={item.title} img={item.img} btnTitle={item.btnTitle} color={data.colorPalle.orange} key={index}/>
               </Box>
             </Grid>
           )

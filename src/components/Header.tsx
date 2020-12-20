@@ -7,10 +7,10 @@ type PropsNavItemLink = {
   item: any;
 }
 
-const NavItemLink = ({ item: { href, text, isActive } }: PropsNavItemLink) => {
+const NavItemLink = ({ item: { href, text } }: PropsNavItemLink) => {
   return (
     <li className='nav-item'>
-      <a className={isActive ? 'nav-link active' : 'nav-link'} href={href}>
+      <a className='nav-link' href={href}>
         {text}
       </a>
     </li>
@@ -59,7 +59,7 @@ const Header = ({subDomain}: PropsHeader) => {
       <div className='container-header'>
         <Logo subDomain={subDomain} />
         <div className='nav-div'>
-          <ul className='navlink'>
+          <ul className='navlink-parent'>
             {navItemsLink.map((item:any, index:number) => {
               return <NavItemLink item={item} key={index} />
             })}

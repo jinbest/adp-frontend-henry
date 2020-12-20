@@ -12,7 +12,7 @@ const Section6 = ({subDomain}: Props) => {
   
   return (
     <section className='Container'>      
-      <div style={{color: 'black', textAlign: 'center'}}>
+      <div style={{color: 'black', textAlign: 'center', marginBottom: '20px'}}>
         <Typography className='section-title'>
           See Why Customers Love DeviceList
         </Typography>

@@ -71,6 +71,7 @@ export default function CustomizedMenus() {
             />
           </div>
         </div>
+        <div style={{borderLeft: '1px solid gray'}}></div>
       </StyledMenu>
     </div>
   );

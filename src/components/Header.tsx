@@ -67,7 +67,6 @@ const Header = ({subDomain}: PropsHeader) => {
               return <NavItemLink item={item} key={index} />
             })}
           </ul>
-          {/* <Button title='Find a Store' bgcolor='#054DFA' borderR='20px'/> */}
           <Menu />
           <img src={storeImg.default} />
         </div>

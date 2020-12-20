@@ -37,8 +37,8 @@ type PropsHeader = {
 
 const Header = ({subDomain}: PropsHeader) => {
   const data = require(`../assets/${subDomain}/Database`);
-  console.log(data);
   const navItemsLink = data.navItemsData, brandItemLink = data.brandItemsData;
+  const storeImg = require(`../assets/${subDomain}/img/store.png`);
 
   return (
     <header className='header'>
@@ -65,25 +65,8 @@ const Header = ({subDomain}: PropsHeader) => {
             })}
           </ul>
           <Button title='Find a Store' bgcolor='#054DFA' borderR='20px'/>
+          <img src={storeImg.default} />
         </div>
-        {/* <nav className='navbar navbar-expand-lg navbar-light'>
-          <Logo subDomain={subDomain} />
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-toggle='collapse'
-            data-target='#collapsibleNavbar'
-          >
-            <span className='navbar-toggler-icon'></span>
-          </button>
-          <div className='collapse navbar-collapse' id='collapsibleNavbar'>
-            <ul className='navbar-nav ml-auto'>
-              {navItemsLink.map((item:any, index:number) => {
-                return <NavItemLink item={item} key={index} />
-              })}
-            </ul>
-          </div>
-        </nav> */}
       </div>
     </header>
   )

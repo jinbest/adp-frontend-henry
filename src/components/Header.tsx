@@ -1,5 +1,6 @@
 import React from 'react'
-// import Logo from './Logo'
+import Logo from './Logo'
+import {Button} from '../components'
 
 /*eslint-disable*/
 type PropsNavItemLink = {
@@ -56,6 +57,15 @@ const Header = ({subDomain}: PropsHeader) => {
         </div>
       </div>
       <div className='container-header'>
+        <Logo subDomain={subDomain} />
+        <div className='nav-div'>
+          <ul className='navlink'>
+            {navItemsLink.map((item:any, index:number) => {
+              return <NavItemLink item={item} key={index} />
+            })}
+          </ul>
+          <Button title='Find a Store' bgcolor='#054DFA' borderR='20px'/>
+        </div>
         {/* <nav className='navbar navbar-expand-lg navbar-light'>
           <Logo subDomain={subDomain} />
           <button

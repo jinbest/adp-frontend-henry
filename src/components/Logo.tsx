@@ -12,7 +12,7 @@ const Logo = ({subDomain}: Props) => {
   return (
     <Router>
       <Link to='/'>
-        <img style={{zIndex: 11}} src={logoImg.default} alt='logo'/>
+        <img src={logoImg.default} alt='logo'/>
       </Link>
     </Router>
   )

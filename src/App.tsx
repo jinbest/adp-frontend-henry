@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import { Footer, Header } from './components'
 import { Home } from './pages/home/'
-
+/* eslint-disable */
 const subDomain:string = 'DeviceList'
 
 function App(): JSX.Element {

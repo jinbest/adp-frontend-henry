@@ -1,5 +1,5 @@
 import React from 'react'
-import {Section1, Section2, Section3} from './'
+import {Section1, Section2, Section3, Section4} from './'
 import { Container } from '@material-ui/core';
 
 /* eslint-disable */
@@ -14,6 +14,7 @@ const Home = ({subDomain}: Props) => {
       <Section1 subDomain={subDomain}/>
       <Section2 subDomain={subDomain}/>
       <Section3 subDomain={subDomain}/>
+      <Section4 subDomain={subDomain}/>
     </div>
   )
 }

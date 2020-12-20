@@ -14,6 +14,13 @@ import other from './img/cardfix/other.png'
 // card-popular image
 import camera from './img/popular/camera.png'
 
+// device-list images
+import best from './img/devicelist/best.png'
+import warranty from './img/devicelist/warranty.png'
+import positive from './img/devicelist/positive.png'
+import amazing from './img/devicelist/amazing.png'
+import proudly from './img/devicelist/proudly.png'
+
 const cardMobileData = [
   { img: trade, title: 'TRADE', btnTitle: 'Trade my Device' },
   { img: repair, title: 'REPAIR', btnTitle: 'Repair my Device' },
@@ -55,6 +62,14 @@ const popularCardData = [
   { img: camera, title: 'iPhone 11 Pro', subtitle: 'As low as /', price: '$897'},
 ]
 
+const devicelistData = [
+  { img: best, title: 'Best offer available', content: 'Selected by our price-quality algorithm' },
+  { img: warranty, title: '1 Year Warranty', content: 'Our partner merchants are continously monitored.' },
+  { img: amazing, title: 'Amazing Service', content: 'Secure shopping experience.' },
+  { img: positive, title: 'Positive Impact', content: 'An alternative to new, joyful and elegant.' },
+  { img: proudly, title: 'Proudly Canadian', content: 'Canadian owned and Canadian based.' },
+]
+
 const colorPalle = {
   orange: '#F36B26'
 }
@@ -64,5 +79,6 @@ export {
   colorPalle,
   cardFixData,
   contentFixData,
-  popularCardData
+  popularCardData,
+  devicelistData
 }

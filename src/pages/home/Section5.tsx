@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button} from '../../components'
+import { Typography, Box } from '@material-ui/core';
 
 /* eslint-disable */
 type Props = {
@@ -14,12 +15,12 @@ const Section5 = ({subDomain}: Props) => {
     <section className='Container'>      
       <div style={{color: 'black', textAlign: 'center'}}>
         {/* <Button title='Our quality charter' bgcolor='#054DFA' borderR='20px'/> */}
-        <p>{bounceData.title}</p>
-        <p>{bounceData.content}</p>
+        <Typography className='f40'>{bounceData.title}</Typography>
+        <Typography>{bounceData.content}</Typography>
         <img src={bounceData.img} />
-        <p>{bounceData.subtitle}</p>
-        <div style={{display: 'flex'}}>
-          <p>{bounceData.subcontent}</p>
+        <Typography>{bounceData.subtitle}</Typography>
+        <Box style={{display: 'flex'}}>
+          <Typography>{bounceData.subcontent}</Typography>
           <ul style={{display: 'flex'}}>
             {bounceData.subcontentData.map((item:any, index:number) => {
               return (
@@ -27,7 +28,7 @@ const Section5 = ({subDomain}: Props) => {
               )
             })}
           </ul>
-        </div>
+        </Box>
         <Button title={bounceData.btnTitle} bgcolor='#054DFA' borderR='20px'/>
       </div>
     </section>

@@ -11,6 +11,9 @@ import computer from './img/cardfix/computer.png'
 import console from './img/cardfix/game.png'
 import other from './img/cardfix/other.png'
 
+// card-popular image
+import camera from './img/popular/camera.png'
+
 const cardMobileData = [
   { img: trade, title: 'TRADE', btnTitle: 'Trade my Device' },
   { img: repair, title: 'REPAIR', btnTitle: 'Repair my Device' },
@@ -45,6 +48,13 @@ const contentFixData = [
   }
 ]
 
+const popularCardData = [
+  { img: camera, title: 'iPhone 11 Pro', subtitle: 'As low as /', price: '$897'},
+  { img: camera, title: 'iPhone 11 Pro', subtitle: 'As low as /', price: '$897'},
+  { img: camera, title: 'iPhone 11 Pro', subtitle: 'As low as /', price: '$897'},
+  { img: camera, title: 'iPhone 11 Pro', subtitle: 'As low as /', price: '$897'},
+]
+
 const colorPalle = {
   orange: '#F36B26'
 }
@@ -53,5 +63,6 @@ export {
   cardMobileData,
   colorPalle,
   cardFixData,
-  contentFixData
+  contentFixData,
+  popularCardData
 }

@@ -1,0 +1,21 @@
+.card-popular {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+ }
+
+ .card-popular img {
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 20px;
+ }
+ 
+ .card-popular .title {
+   color: black;
+   text-align: left;
+   margin: 20px;
+ }

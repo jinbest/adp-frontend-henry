@@ -30,7 +30,7 @@ const Section3 = ({subDomain}: Props) => {
               )
             })}
           </Grid>
-          <Box className='mg-t-3'>
+          <Box className='pd-t-4'>
             <Grid container item xs={12}>
               <Grid item sm={12} md={7}>
                 <Typography className='section-title white'>

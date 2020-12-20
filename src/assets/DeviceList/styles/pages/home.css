@@ -1,5 +1,11 @@
 .mg-t-3 {
-  margin: 3rem 0;
+  margin: 3rem 0 !important;
+}
+.mg-t-7 {
+  margin: 7rem 0 !important;
+}
+.pd-t-4 {
+  padding: 4rem 0;
 }
 .white {
   color: white;
@@ -10,12 +16,15 @@
 .f24 {
   font-size: 28px !important;
 }
+.f22 {
+  font-size: 22px !important;
+}
 .Container {
   max-width: 1440px;
   position: relative;
   display: block !important;
   margin: 2rem 0;
-  margin: auto;
+  margin: auto !important;
   padding: 0 2rem;
 }
 
@@ -48,6 +57,7 @@
   font-weight: 800 !important;
   line-height: 1.2 !important;
   padding: 1rem 1rem 0!important;
+  margin: 3rem 0 2rem !important;
 }
 .cartfix-container {
   margin-top: 1rem !important;
@@ -64,12 +74,20 @@
   width: 100%;
 }
 .cart-popular-container {
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
 }
 .card-img {
   max-width: 533px;
+  width: 100%;
   float: right;
 }
 .section3-back {
   background-image: url('../../img/section3-bg.png');
+}
+.cart-device-list {
+  max-width: 300px;
+  width: 100%;
+}
+.section4-button {
+  width: 316px;
 }

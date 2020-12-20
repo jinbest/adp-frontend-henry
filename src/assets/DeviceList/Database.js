@@ -27,8 +27,6 @@ const cardMobileData = [
 //   { img: other, title: 'Other'},
 // ]
 
-export {
-  cardMobileData,
   // cardFixData
 const colorPalle = {
   orange: '#F36B26'

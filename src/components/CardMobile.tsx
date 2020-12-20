@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
+/* eslint-disable */
 type Props = {
   title: string;
   img: string;

@@ -26,6 +26,25 @@ const cardFixData = [
   { img: other, title: 'Other'},
 ]
 
+const contentFixData = [
+  { 
+    title: 'FREE DIAGNOSTICS', 
+    content: 'We believe in a transparent repqir process. If you\'re not sure what\'s wrong with your device, we\'ll diagnose it for free.',
+  },
+  {
+    title: 'LOW PRICE GUARANTEE',
+    content: 'We want you to be confident that you\'re getting the best price. We\'ll match any local competitor\'s published price for the same repair and beat it by $5.',
+  },
+  {
+    title: 'QUICK TURNAROUND',
+    content: 'We know you don\'t have all day so we\'ll return your device as quickly as possible. Most of our repairs can be performed in under two hours.',
+  },
+  {
+    title: '90 DAY WARRANTY',
+    content: 'All of repairs are backed with our 90-day, hassle-free warranty. This warranty. This warranty is valid at all of our locations worldwide.'
+  }
+]
+
 const colorPalle = {
   orange: '#F36B26'
 }
@@ -33,5 +52,6 @@ const colorPalle = {
 export {
   cardMobileData,
   colorPalle,
-  cardFixData
+  cardFixData,
+  contentFixData
 }

@@ -1,16 +1,16 @@
 import React from 'react'
 import Logo from './Logo'
-import {Button} from '../components'
+import {Button, Search, Menu} from '../components'
 
 /*eslint-disable*/
 type PropsNavItemLink = {
   item: any;
 }
 
-const NavItemLink = ({ item: { href, text, isActive } }: PropsNavItemLink) => {
+const NavItemLink = ({ item: { href, text } }: PropsNavItemLink) => {
   return (
     <li className='nav-item'>
-      <a className={isActive ? 'nav-link active' : 'nav-link'} href={href}>
+      <a className='nav-link' href={href}>
         {text}
       </a>
     </li>
@@ -58,13 +58,17 @@ const Header = ({subDomain}: PropsHeader) => {
       </div>
       <div className='container-header'>
         <Logo subDomain={subDomain} />
+        <div className='search-div'>
+          <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
+        </div>
         <div className='nav-div'>
-          <ul className='navlink'>
+          <ul className='navlink-parent'>
             {navItemsLink.map((item:any, index:number) => {
               return <NavItemLink item={item} key={index} />
             })}
           </ul>
-          <Button title='Find a Store' bgcolor='#054DFA' borderR='20px'/>
+          {/* <Button title='Find a Store' bgcolor='#054DFA' borderR='20px'/> */}
+          <Menu />
           <img src={storeImg.default} />
         </div>
       </div>

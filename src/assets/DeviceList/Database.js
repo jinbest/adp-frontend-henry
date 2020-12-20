@@ -10,6 +10,11 @@ const cardMobileData = [
   { img: protect, title: 'PROTECT', btnTitle: 'Protect my Device' },
 ]
 
+const colorPalle = {
+  orange: '#F36B26'
+}
+
 export {
   cardMobileData,
+  colorPalle
 }

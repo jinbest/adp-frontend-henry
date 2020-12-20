@@ -5,15 +5,16 @@ type Props = {
   title: string;
   img: string;
   btnTitle: string;
+  color?: string; 
 }
 
-const CardMobile = ({title, img, btnTitle}: Props) => {
+const CardMobile = ({title, img, btnTitle, color}: Props) => {
   
   return (
     <div className='card-mobile'>
-      <p>{title}</p>
+      <p style={{color: color}}>{title}</p>
       <img src={img} />
-      <Button title={btnTitle} bgcolor='#F36B26'/>
+      <Button title={btnTitle} bgcolor={color}/>
     </div>
   )
 }

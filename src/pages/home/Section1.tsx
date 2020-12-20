@@ -1,7 +1,7 @@
-import { Card } from '@material-ui/core';
 import React from 'react'
-import {CardMobile} from '../../components'
-
+import { CardMobile } from '../../components'
+import { Grid, Box } from '@material-ui/core'
+/* eslint-disable */
 type Props = {
   subDomain?: string;
 }
@@ -11,15 +11,17 @@ const Section1 = ({subDomain}: Props) => {
 
   return (
     <section>
-      <div>section1</div>
-      <div>
+      <Grid container item xs={12}>
         {data.cardMobileData.map((item:any, index:number) => {
           return (
-            <CardMobile title={item.title} img={item.img} btnTitle={item.btnTitle} key={index}/>
+            <Grid item xs={6} sm={3} spacing={2}>
+              <Box className="cart-mobile-container">
+                <CardMobile title={item.title} img={item.img} btnTitle={item.btnTitle} key={index}/>
+              </Box>
+            </Grid>
           )
         })}
-      </div>
-      
+      </Grid>
     </section>
   )
 }

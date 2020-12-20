@@ -59,7 +59,7 @@ const Header = ({subDomain}: PropsHeader) => {
       <div className='container-header'>
         <Logo subDomain={subDomain} />
         <div className='search-div'>
-          <Search color='gray' bgcolor='white' border='gray'/>
+          <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
         </div>
         <div className='nav-div'>
           <ul className='navlink-parent'>

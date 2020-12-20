@@ -1,7 +1,5 @@
 import React from 'react'
 import {Section1, Section2, Section3} from './'
-import { Container } from '@material-ui/core';
-
 /* eslint-disable */
 type Props = {
   subDomain: string;

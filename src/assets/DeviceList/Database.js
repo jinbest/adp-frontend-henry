@@ -108,6 +108,18 @@ const colorPalle = {
   orange: '#F36B26'
 }
 
+const navItemsData = [
+  { href: 'trade', text: 'Trade', isActive: false },
+  { href: 'repair', text: 'Repair', isActive: false },
+  { href: 'buy', text: 'Buy', isActive: false },
+  { href: 'protect', text: 'Protect', isActive: false },
+]
+
+const brandItemsData = {
+  left: ['BUSINESS', 'FINANCING'],
+  right: [ '204.221.5898', 'ENGLISH', 'LOG IN' ]
+}
+
 export {
   cardMobileData,
   colorPalle,
@@ -116,5 +128,7 @@ export {
   popularCardData,
   devicelistData,
   bounceData,
-  whyCustomersData
+  whyCustomersData,
+  navItemsData,
+  brandItemsData
 }

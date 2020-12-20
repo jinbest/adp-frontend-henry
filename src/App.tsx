@@ -10,7 +10,7 @@ function App(): JSX.Element {
 
   return (
     <div>
-      <Header />
+      <Header subDomain={subDomain} />
       <Router>
         <Route path='/' exact component={() => <Home subDomain={subDomain} />} />
         <Route path='/home' render={() => (<Redirect to="/" />)} />

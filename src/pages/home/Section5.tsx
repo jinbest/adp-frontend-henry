@@ -12,25 +12,27 @@ const Section5 = ({subDomain}: Props) => {
   const bounceData = data.bounceData;
   
   return (
-    <section className='Container'>      
-      <div style={{color: 'black', textAlign: 'center'}}>
+    <section className='sec5-Back'>
+      <Box className='Container sec5-container'>
         {/* <Button title='Our quality charter' bgcolor='#054DFA' borderR='20px'/> */}
-        <Typography className='f40'>{bounceData.title}</Typography>
-        <Typography>{bounceData.content}</Typography>
-        <img src={bounceData.img} />
-        <Typography>{bounceData.subtitle}</Typography>
-        <Box style={{display: 'flex'}}>
+        <Typography className='f40 bold mg-t-1'>{bounceData.title}</Typography>
+        <Typography className='f18'>{bounceData.content}</Typography>
+        <img className='mg-t-1 section5-img' src={bounceData.img} />
+        <Typography className='f24 bold'>{bounceData.subtitle}</Typography>
+        <Box className='col_center'>
           <Typography>{bounceData.subcontent}</Typography>
-          <ul style={{display: 'flex'}}>
+          <ul>
             {bounceData.subcontentData.map((item:any, index:number) => {
               return (
-                <li key={index} style={{margin: '0 20px'}}>{item}</li>
+                <li key={index}>&nbsp;&bull;&nbsp;{item}</li>
               )
             })}
           </ul>
         </Box>
-        <Button title={bounceData.btnTitle} bgcolor='#054DFA' borderR='20px'/>
-      </div>
+        <Box className='sec5-button'>
+          <Button title={bounceData.btnTitle} bgcolor='#054DFA' borderR='20px'/>
+        </Box>
+      </Box>
     </section>
   )
 }

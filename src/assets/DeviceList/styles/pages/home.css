@@ -1,6 +1,9 @@
 .mg-t-3 {
   margin: 3rem 0 !important;
 }
+.mg-t-1 {
+  margin: 1rem 0 !important;
+}
 .mg-t-7 {
   margin: 7rem auto !important;
 }
@@ -16,12 +19,21 @@
 .black {
   color: black;
 }
+.f18 {
+  font-size: 18px !important;
+}
 .f24 {
   font-size: 28px !important;
 }
 .f40 {
   font-size: 40px !important;
 }
+.col_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Container {
   max-width: 1440px;
   position: relative;
@@ -101,6 +113,33 @@
 }
 .mobile {
   display: none;
+}
+p {
+  line-height: 1.2 !important;
+}
+.section5-img {
+  max-width: 500px;
+  width: 100%;
+}
+.sec5-container {
+  text-align: center;
+}
+.sec5-container .col_center > ul {
+  padding-left: 0px;
+  display: flex;
+  list-style: none;
+}
+.sec5-container .col_center > li{
+  text-align: left;
+  /* margin: 20px;  */
+}
+.sec5-button {
+  width: 330px;
+  margin: auto;
+}
+.sec5-Back {
+  background-color: #f5f5f5;
+  padding-top: 1rem;
 }
 @media only screen and (max-width: 768px) {
   .section4-button {

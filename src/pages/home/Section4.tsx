@@ -39,8 +39,8 @@ const Section4 = ({subDomain}: Props) => {
           </Grid>
         </Grid>
         <Grid container item xs={12}>
-          <Grid item xs={12} sm={4} ></Grid>
-          <Grid item xs={12} sm={8} >
+          <Grid item xs={12} sm={3} ></Grid>
+          <Grid item xs={12} sm={9} >
             <Grid item container xs={12}>
               {data.devicelistData.slice(2,5).map((item:any, index:number) => {
                 return (

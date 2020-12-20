@@ -12,10 +12,10 @@ const Section1 = ({subDomain}: Props) => {
   const data = require(`../../assets/${subDomain}/Database`);
 
   return (
-    <section>
-      <Grid container item xs={12} className="section1-top">
+    <section className='Container'>
+      <Grid item xs={12} className="section1-top">
         <Typography className="section1-title">
-          Trade, repair, buy or sell <br/>
+          Trade, repair, buy or sell <br />
           your mobile device
         </Typography>
         <Typography className="section1-subtitle">
@@ -23,7 +23,7 @@ const Section1 = ({subDomain}: Props) => {
         </Typography>
         <Search color='white' bgcolor='#054DFA' />
       </Grid>
-      <Grid container item xs={12} className="mobile-container">
+      <Grid container item xs={12}>
         {data.cardMobileData.map((item:any, index:number) => {
           return (
             <Grid item xs={6} sm={3}>

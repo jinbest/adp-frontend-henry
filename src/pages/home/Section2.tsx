@@ -11,8 +11,8 @@ const Section2 = ({subDomain}: Props) => {
   const data = require(`../../assets/${subDomain}/Database`);
 
   return (
-    <section className='section2-container'>
-      <Typography className="section2-title">
+    <section className='Container'>
+      <Typography className='section-title'>
           What can we fix for you today
       </Typography>
       <Grid container item xs={12}>

@@ -1,16 +1,16 @@
-.homepage {
-  color: white;
-  max-width: 1980px;
+.Container {
+  max-width: 1440px;
+  margin: auto;
+  display: block !important;
+
 }
 
 .cart-mobile-container {
+  margin: auto;
   max-width: 230px;
   width: 100%
 }
 
-.mobile-container {
-  max-width: 1980px;
-}
 .section1-top {
   margin-top: 140px !important;
   margin-bottom: 140px !important;
@@ -25,15 +25,15 @@
   color: #000000;
 }
 .section1-subtitle {
+  color: black;
   font-size: 30px !important;
   margin: 1rem 0 !important;
-  padding: 1rem 0 !important;
 }
-.section2-title {
+.section-title {
   color: black;
   font-size: 30px !important;
   font-weight: 800 !important;
-  padding: 1rem 0 0!important;
+  padding: 1rem 1rem 0!important;
 }
 .cartfix-container {
   margin-top: 1rem !important;
@@ -49,6 +49,6 @@
   max-width: 250px !important;
   width: 100%;
 }
-.section2-container {
-  margin: 3rem 0;
+.cart-popular-container {
+  margin: 1rem;
 }

@@ -10,13 +10,11 @@ type Props = {
 const Home = ({subDomain}: Props) => {
 
   return (
-    <Container className="Homepage">
     <div className='homepage'>
       <Section1 subDomain={subDomain}/>
       <Section2 subDomain={subDomain}/>
       <Section3 subDomain={subDomain}/>
     </div>
-    </Container>
   )
 }
 

@@ -27,4 +27,28 @@
 .section1-subtitle {
   font-size: 30px !important;
   margin: 1rem 0 !important;
+  padding: 1rem 0 !important;
+}
+.section2-title {
+  color: black;
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  padding: 1rem 0 0!important;
+}
+.cartfix-container {
+  margin-top: 1rem !important;
+  justify-content: center;
+  display: flex !important;
+  margin: auto;
+}
+.cart-fix-container {
+  margin: 1rem;
+}
+.cart-contentfix-container {
+  margin-top: 1rem;
+  max-width: 250px !important;
+  width: 100%;
+}
+.section2-container {
+  margin: 3rem 0;
 }

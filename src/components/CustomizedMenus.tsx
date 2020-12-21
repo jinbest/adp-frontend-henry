@@ -103,7 +103,7 @@ const CustomizedMenus = ({subDomain}: Props) => {
           </div>
         </div>
         <div className='menu-search-div'>
-          <div className='search-div'>
+          <div className='menu-search'>
             <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
           </div>
           <Button 

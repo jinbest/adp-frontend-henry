@@ -24,6 +24,22 @@ import proudly from "./img/devicelist/proudly.png"
 // bounce image
 import bounce from "./img/bounce.png"
 
+// avatar images
+import userActive from './img/avatar/user-active.png'
+import userDeactive from './img/avatar/user-deactive.png'
+import menu from './img/avatar/menu.png'
+import store from './img/avatar/store.png'
+import storeBlue from './img/avatar/store-blue.png'
+import cancel from './img/avatar/cancel.png'
+
+// arrow images
+import arrowLeft from './img/arrow/arrow-left.png'
+import arrowRight from './img/arrow/arrow-right.png'
+
+// shape images
+import cornerShape from './img/corner-shape.png'
+import mockupShape from './img/mockup-shape.png'
+
 const cardMobileData = [
     { img: trade, title: "TRADE", btnTitle: "Trade my Device" },
     { img: repair, title: "REPAIR", btnTitle: "Repair my Device" },
@@ -128,10 +144,10 @@ const colorPalle = {
 }
 
 const navItemsData = [
-    { href: "trade", text: "Trade", isActive: false },
-    { href: "repair", text: "Repair", isActive: false },
-    { href: "buy", text: "Buy", isActive: false },
-    { href: "protect", text: "Protect", isActive: false },
+    { href: "#", text: "Trade", isActive: false },
+    { href: "#", text: "Repair", isActive: false },
+    { href: "#", text: "Buy", isActive: false },
+    { href: "#", text: "Protect", isActive: false },
 ]
 
 const brandItemsData = {
@@ -188,6 +204,54 @@ const hoursData = [
     { day: "Sunday", time: "Closed" },
 ]
 
+const avatarData = {
+    userActive: userActive,
+    userDeactive: userDeactive,
+    cancel: cancel,
+    store: store,
+    storeBlue: storeBlue,
+    menu: menu
+}
+
+const mobileNavItemData = {
+    left: [
+        {text: 'Trade', href: '#'},
+        {text: 'Repair', href: '#'},
+        {text: 'Buy', href: '#'},
+        {text: 'Protect', href: '#'},
+        {text: 'Business', href: '#'},
+        {text: 'Financing', href: '#'},
+        {text: 'Insurance', href: '#'},
+        {text: 'Find a Store', href: '#'},
+        {text: 'Conact Us', href: '#'},
+    ],
+    right: [
+        {text: 'Apple', href: '#'},
+        {text: 'Samsung', href: '#'},
+        {text: 'Google', href: '#'},
+        {text: 'LG', href: '#'},
+        {text: 'OnePlus', href: '#'},
+    ],
+}
+
+const userNavItemData = [
+    {text: 'My Account', href: '#'},
+    {text: 'Track Repair', href: '#'},
+    {text: 'File a Claim', href: '#'},
+    {text: 'Orders', href: '#'},
+    {text: 'Trade-In', href: '#'},
+]
+
+const arrowData = {
+    arrowLeft: arrowLeft,
+    arrowRight: arrowRight
+}
+
+const shapeData = {
+    cornerShape: cornerShape,
+    mockupShape: mockupShape
+}
+
 export {
     cardMobileData,
     colorPalle,
@@ -201,4 +265,9 @@ export {
     brandItemsData,
     hoursData,
     footerLink,
+    avatarData,
+    mobileNavItemData,
+    userNavItemData,
+    arrowData,
+    shapeData
 }

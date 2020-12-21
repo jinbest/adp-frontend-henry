@@ -6,12 +6,13 @@ type Props = {
   color?: string;
   bgcolor?: string;
   border?: string;
+  height?: string;
 }
 
-const Search = ({color, bgcolor, border}: Props) => {
+const Search = ({color, bgcolor, border, height}: Props) => {
 
   return (
-      <Box className="search-container" style={{background: bgcolor, border: `1px solid ${border}`}}>
+      <Box className="search-container" style={{background: bgcolor, border: `1px solid ${border}`, height: height}}>
         <InputBase 
           className="search-input" 
           style={{color: color}} 

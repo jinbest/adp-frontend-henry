@@ -22,7 +22,7 @@ const Section1 = ({subDomain}: Props) => {
           Winnipeg's mobile device specialists
         </Typography>
         <Box className='sec1-search_input'>
-          <Search color='white' bgcolor='#054DFA' />
+          <Search color='white' bgcolor='#054DFA' height='60px' />
         </Box>
       </Grid>
       <Grid container item xs={12} sm={12} spacing={3}>

@@ -19,7 +19,7 @@ const Section2 = ({subDomain}: Props) => {
         <Box className="cartfix-container">
           {data.cardFixData.map((item:any, index:number) => {
             return (
-              <Grid item xs={6} sm={2} spacing={2}>
+              <Grid item xs={6} sm={2}>
                 <Box className="cart-fix-container">
                   <CardFix title={item.title} img={item.img} key={index} />
                 </Box>

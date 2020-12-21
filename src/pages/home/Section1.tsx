@@ -25,7 +25,7 @@ const Section1 = ({subDomain}: Props) => {
           <Search color='white' bgcolor='#054DFA' height='60px' />
         </Box>
       </Grid>
-      <Grid container item xs={12} sm={12} spacing={3}>
+      <Grid container item xs={12} sm={12} spacing={2}>
         {data.cardMobileData.map((item:any, index:number) => {
           return (
             <Grid item xs={12} sm={6} md={3}>

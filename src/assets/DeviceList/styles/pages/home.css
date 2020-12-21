@@ -42,7 +42,7 @@
 
 .Container {
   max-width: 1440px;
-  position: relative;
+  /* position: relative; */
   display: block !important;
   margin: 2rem auto !important;
   padding: 0 2rem;

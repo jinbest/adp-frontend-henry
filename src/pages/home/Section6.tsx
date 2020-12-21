@@ -18,7 +18,7 @@ const Section6 = ({subDomain}: Props) => {
       <Typography className='f24'>
         View More
       </Typography>
-      <Grid container item xs={12} spacing={3} className='sec6-card'>
+      <Grid container item xs={12} spacing={2} className='sec6-card'>
         {data.whyCustomersData.map((item:any, index:number) => {
           return (
             <Grid item xs={12} md={4}>

@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 768px) {
-  .container-header .nav-div, .header-brand {
+  .container-header .nav-div, .header-brand, .mockup-shape {
     display: none;
   }
   .container-header {
@@ -24,7 +24,7 @@
     text-align: center;
     display: block;
   }
-  .shape-div {
+  .corner-shape {
     width: 60vw;
   }
 }

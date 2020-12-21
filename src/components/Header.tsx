@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import {Button, Search, Menu} from '../components'
+import {Search, CustomizedMenus} from '../components'
 
 /*eslint-disable*/
 type PropsNavItemLink = {
@@ -67,7 +67,7 @@ const Header = ({subDomain}: PropsHeader) => {
               return <NavItemLink item={item} key={index} />
             })}
           </ul>
-          <Menu />
+          <CustomizedMenus subDomain={subDomain} />
           <img src={storeImg.default} />
         </div>
       </div>

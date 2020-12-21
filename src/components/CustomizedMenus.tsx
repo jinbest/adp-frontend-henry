@@ -1,11 +1,14 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Menu, { MenuProps } from '@material-ui/core/Menu';
-import Button from './Button'
+import {Button, Search} from '.'
 
 const StyledMenu = withStyles({
   paper: {
-    border: '1px solid #d3d4d5',
+    borderRadius: '15px',
+    boxShadow: '0 4px 4px rgba(0,0,0,0.25)',
+    overflow: 'inherit',
+    marginTop: '1px'
   },
 })((props: MenuProps) => (
   <Menu
@@ -23,7 +26,12 @@ const StyledMenu = withStyles({
   />
 ));
 
-export default function CustomizedMenus() {
+type Props = {
+  subDomain?: string;
+}
+
+const CustomizedMenus = ({subDomain}: Props) => {
+  const data = require(`../assets/${subDomain}/Database`);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -51,11 +59,12 @@ export default function CustomizedMenus() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
+        <div className='triangle'></div>
         <div className='menu-content-div'>
           <div className='left-content'>
             <div className='content-block'>
-              <p className='title'>MY STORE</p>
-              <p className='content'>71 Greenford Avenue Winninpeg, MB RiR 1R1 (204) 555-5555</p>
+              <p className='block-title'>MY STORE</p>
+              <p className='block-content'>71 Greenford Avenue Winninpeg, MB RiR 1R1 (204) 555-5555</p>
             </div>
             <div className='content-block'>
               <a className='link'>View Store Details</a>
@@ -70,9 +79,43 @@ export default function CustomizedMenus() {
               margin='0'
             />
           </div>
+          <div style={{borderLeft: '1px solid gray'}}></div>
+          <div>
+            <p className='block-title'>HOURS</p>
+            <div className='hours-div'>
+              <div>
+                {data.hoursData.map((item:any, index:number) => {
+                  return (
+                    <p className='block-content' key={index}>{item.day}</p>
+                  )
+                })}
+              </div>
+              <div>
+                {data.hoursData.map((item:any, index:number) => {
+                  return (
+                    <p className='block-content' key={index}>{item.time}</p>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
         </div>
-        <div style={{borderLeft: '1px solid gray'}}></div>
+        <div className='menu-search-div'>
+          <div className='search-div'>
+            <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
+          </div>
+          <Button 
+            title='Search' 
+            bgcolor='#054DFA' 
+            borderR='20px'
+            width='100px'
+            height='40px'
+            margin='0 20px'
+          />
+        </div>               
       </StyledMenu>
     </div>
   );
 }
+
+export default CustomizedMenus;

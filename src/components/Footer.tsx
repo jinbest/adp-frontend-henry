@@ -14,15 +14,23 @@ const Footer = ({subDomain}: Props) => {
     <footer className='footer'>
       <Box className='footer-container'>
         <Grid container item xs={12}>
-          <Grid xs={12} md={4}>
+          <Grid xs={12} md={5}>
             <Logo subDomain={subDomain} type='footer' />
-            <div style={{marginTop: '20px'}}>
-              Canada's mibile device marketplace <br/>
-              (204) 221-5898 | sales@devicelist.co <br/>
-              2020 Corydon Ave, Unit F Winnipe, MB
+            <div className='device-list-grid'>
+              <div>
+                Canada's mibile device marketplace 
+                (204) 221-5898 | sales@devicelist.co 
+                2020 Corydon Ave, Unit F Winnipe, MB
+              </div>
+              <div>
+                @ 2020 DeviceList 1.0.2. All Rigths Reserved. <br />
+                All trademarks are properties of their respective holders. 11253913 Canada Inc. o/a 
+                "DeviceList" does not own or make claim to those trademarks used on this website in 
+                which it is not the holder.
+              </div>
             </div>
           </Grid>
-          <Grid xs={12} md={8}>
+          <Grid xs={12} md={7}>
             <Grid item container xs={12}>
               {
                 footerLink.map((links:any, index:number) => 
@@ -41,6 +49,22 @@ const Footer = ({subDomain}: Props) => {
                 )
               }
             </Grid>
+            <div className="footer-images-div">
+              <div>
+                <img src={data.footerImageData.deviceList} className='footer-device-response'/>
+              </div>
+              <div>
+                <img src={data.footerImageData.buyNow} className='footer-buynow'/>
+                {data.footerImageData.others.map((item:any, index:number) => {
+                  return (
+                    <div className="footer-others">
+                      <img src={item} key={index} />
+                    </div>
+                  )
+                })}
+                <img src={data.footerImageData.deviceList} className='footer-device-list'/>
+              </div>
+            </div>
           </Grid>
         </Grid>
       </Box>

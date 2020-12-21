@@ -15,7 +15,7 @@ function App(): JSX.Element {
         <Route path='/' exact component={() => <Home subDomain={subDomain} />} />
         <Route path='/home' render={() => (<Redirect to="/" />)} />
       </Router>
-      <Footer />
+      <Footer subDomain={subDomain} />
     </div>
   )
 }

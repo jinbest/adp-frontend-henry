@@ -32,7 +32,7 @@ const Section2 = ({subDomain}: Props) => {
           {
             data.contentFixData.map((item:any, index:number) => {
               return (
-                <Grid item xs={12} sm={3}>
+                <Grid item xs={12} sm={6} md={3}>
                   <Box className='cart-contentfix-container'>
                     <ContentFix title={item.title} content={item.content} key={index} />
                   </Box>

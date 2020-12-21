@@ -15,7 +15,7 @@ const CardMobile = ({title, img, btnTitle, color}: Props) => {
     <div className='card-mobile'>
       <p style={{color: color}}>{title}</p>
       <img src={img} />
-      <Button title={btnTitle} bgcolor={color} borderR='10px' margin='auto' />
+      <Button title={btnTitle} bgcolor={color} borderR='10px' margin='auto' fontSize='16px' />
     </div>
   )
 }

@@ -28,7 +28,7 @@ const Section2 = ({subDomain}: Props) => {
           })}
           </Box>
         </Grid>
-        <Grid container item xs={12}>
+        <Grid container item xs={12} spacing={3}>
           {
             data.contentFixData.map((item:any, index:number) => {
               return (

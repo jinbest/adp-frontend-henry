@@ -13,7 +13,7 @@ const Section1 = ({subDomain}: Props) => {
 
   return (
     <section className='Container'>
-      <Grid item xs={12} className="section1-top">
+      <Grid item xs={12} sm={12} className="section1-top">
         <Typography className="section1-title">
           Trade, repair, buy or sell <br />
           your mobile device
@@ -21,9 +21,11 @@ const Section1 = ({subDomain}: Props) => {
         <Typography className="section1-subtitle">
           Winnipeg's mobile device specialists
         </Typography>
-        <Search color='white' bgcolor='#054DFA' />
+        <Box className='sec1-search_input'>
+          <Search color='white' bgcolor='#054DFA' />
+        </Box>
       </Grid>
-      <Grid container item xs={12}>
+      <Grid container item xs={12} sm={12} spacing={3}>
         {data.cardMobileData.map((item:any, index:number) => {
           return (
             <Grid item xs={6} sm={3}>

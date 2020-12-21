@@ -71,9 +71,9 @@
 }
 
 .cart-mobile-container {
-  margin: auto;
+  /* margin: auto;
   max-width: 230px;
-  width: 100%
+  width: 100% */
 }
 
 .section1-top {
@@ -83,24 +83,30 @@
 .section1-title {
   font-style: normal;
   font-weight: 900 !important;
-  font-size: 5vw !important;
-  line-height: 1 !important;
+  font-size: 65px !important;
+  line-height: 1.2 !important;
   display: flex;
   align-items: center;
   color: #000000;
 }
 .section1-subtitle {
   color: black;
-  font-size: 3vw !important;
-  margin: 1rem 0 !important;
+  font-size: 45px !important;
+  padding: 1.5rem 0 !important;
+  margin-bottom: 10px !important;
 }
 .section-title {
   font-size: 45px !important;
   font-weight: 800 !important;
   line-height: 1.2 !important;
-  padding: 1rem 1rem 0!important;
+  padding: 1rem 0 0!important;
   margin: 3rem 0 2rem !important;
 }
+.sec1-search_input {
+  max-width: 800px;
+  width: 100%;
+}
+
 .cartfix-container {
   margin-top: 1rem !important;
   justify-content: center;
@@ -115,9 +121,7 @@
   max-width: 300px !important;
   width: 100%;
 }
-.cart-popular-container {
-  margin: 0 1rem 1rem;
-}
+
 .card-img {
   max-width: 533px;
   width: 100%;
@@ -181,6 +185,19 @@ p {
   margin-left: 0px !important;
   padding-top: 3rem;
 }
+
+@media (max-width: 1024px) {
+  .section1-subtitle {
+    font-size: 30px !important;
+  }
+  .section1-title {
+    font-size: 50px !important
+  }
+  .sec1-search_input {
+
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .section4-button {
     margin: auto;
@@ -191,5 +208,11 @@ p {
   }
   .mobile {
     display: block;
+  }
+  .section1-subtitle {
+    font-size: 20px !important;
+  }
+  .section1-title {
+    font-size: 28px !important
   }
 }

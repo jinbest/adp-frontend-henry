@@ -15,31 +15,51 @@ const Section2 = ({subDomain}: Props) => {
       <Typography className='section-title'>
           What can we fix for you today
       </Typography>
-      <Grid container item xs={12}>
-        <Box className="cartfix-container">
-          {data.cardFixData.map((item:any, index:number) => {
+      <div className='card-customized-container-desktop'>
+        {
+          data.cardFixData.map((item:any, index:number) => {
             return (
-              <Grid item xs={6} sm={2}>
-                <Box className="cart-fix-container">
-                  <CardFix title={item.title} img={item.img} key={index} />
+              <div className='card-customized-item'>
+                <CardFix title={item.title} img={item.img} key={index} />
+              </div>
+            )
+          })
+        }
+      </div>
+      <div className='card-customized-container-mobile'>
+        {
+          data.cardFixData.slice(0,3).map((item:any, index:number) => {
+            return (
+              <div className='card-customized-item'>
+                <CardFix title={item.title} img={item.img} key={index} />
+              </div>
+            )
+          })
+        }
+      </div>
+      <div className='card-customized-container-mobile'>
+        {
+          data.cardFixData.slice(3, 5).map((item:any, index:number) => {
+            return (
+              <div className='card-customized-item'>
+                <CardFix title={item.title} img={item.img} key={index} />
+              </div>
+            )
+          })
+        }
+      </div>
+      <Grid container item xs={12} spacing={2}>
+        {
+          data.contentFixData.map((item:any, index:number) => {
+            return (
+              <Grid item xs={12} sm={6} md={3}>
+                <Box className='cart-contentfix-container'>
+                  <ContentFix title={item.title} content={item.content} key={index} />
                 </Box>
               </Grid>
             )
-          })}
-          </Box>
-        </Grid>
-        <Grid container item xs={12} spacing={2}>
-          {
-            data.contentFixData.map((item:any, index:number) => {
-              return (
-                <Grid item xs={12} sm={6} md={3}>
-                  <Box className='cart-contentfix-container'>
-                    <ContentFix title={item.title} content={item.content} key={index} />
-                  </Box>
-                </Grid>
-              )
-            })
-          }
+          })
+        }
       </Grid>
     </section>
   )

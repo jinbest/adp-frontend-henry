@@ -123,6 +123,28 @@
   width: 100%;
 }
 
+/* Section2 Card-Container */
+.card-customized-container-desktop {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+}
+
+.card-customized-container-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.card-customized-item {
+  width: 15%;
+  margin: 20px 0;
+}
+
 .card-img {
   max-width: 533px;
   width: 100%;

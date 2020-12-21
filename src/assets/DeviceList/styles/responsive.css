@@ -20,7 +20,11 @@
 }
 
 @media (max-width: 768px) {
-  .container-header .nav-div, .header-brand, .mockup-shape, .sec1-search_input {
+  .container-header .nav-div, 
+  .header-brand, 
+  .mockup-shape, 
+  .sec1-search_input,
+  .card-customized-container-desktop {
     display: none;
   }
   .section1-top {
@@ -32,8 +36,14 @@
   .avatar-div {
     display: flex;
   }
-  .mobile-search-div {
+  .mobile-search-div,
+  .card-customized-container-mobile {
     display: flex;
+  }
+  .card-customized-item {
+    width: 120px;
+    margin: 20px 10px;
+    max-width: 28%;
   }
   .container-mobile {
     display: block;

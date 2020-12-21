@@ -48,14 +48,25 @@
   padding: 0 2rem;
 }
 
-.shape-div {
+.corner-shape {
   position: absolute;
   top: 0;
   right: 0;
   width: 40vw;
 }
 
-.shape-div > img {
+.corner-shape > img {
+  width: 100%;
+}
+
+.mockup-shape {
+  position: absolute;
+  right: 8vw;
+  top: 13vw;
+  width: 20vw;
+}
+
+.mockup-shape > img {
   width: 100%;
 }
 
@@ -72,7 +83,7 @@
 .section1-title {
   font-style: normal;
   font-weight: 900 !important;
-  font-size: 5.2vw !important;
+  font-size: 5vw !important;
   line-height: 1 !important;
   display: flex;
   align-items: center;
@@ -80,7 +91,7 @@
 }
 .section1-subtitle {
   color: black;
-  font-size: 3.5vw !important;
+  font-size: 3vw !important;
   margin: 1rem 0 !important;
 }
 .section-title {
@@ -114,6 +125,9 @@
 }
 .section3-back {
   background-image: url('../../img/section3-bg.png');
+  background-size: cover;
+  /* background-position: top; */
+  background-repeat: no-repeat;
 }
 .cart-device-list {
   max-width: 280px;

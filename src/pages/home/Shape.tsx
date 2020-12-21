@@ -8,8 +8,13 @@ type Props = {
 const Shape = ({subDomain}: Props) => {
   const data = require(`../../assets/${subDomain}/Database`);
   return (
-    <div className='shape-div'>
-      <img src={data.shapeData.cornerShape} />
+    <div>
+      <div className='corner-shape'>
+        <img src={data.shapeData.cornerShape} />
+      </div>
+      <div className='mockup-shape'>
+        <img src={data.shapeData.mockupShape} />
+      </div>
     </div>
   )
 }

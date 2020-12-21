@@ -53,6 +53,9 @@ const CustomizedMenus = ({subDomain}: Props) => {
         aria-controls="customized-menu"
         aria-haspopup="true"
         onClick={handleClick}
+        icon={true}
+        fontSize='17px'
+        width='150px'
       />
       <StyledMenu
         id="customized-menu"
@@ -79,6 +82,7 @@ const CustomizedMenus = ({subDomain}: Props) => {
               width='40px'
               height='30px'
               margin='0'
+              fontSize='15px'
             />
           </div>
           <div style={{borderLeft: '1px solid gray'}}></div>

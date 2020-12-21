@@ -1,5 +1,6 @@
 import { isWidthDown } from '@material-ui/core'
 import React from 'react'
+import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
 
 /* eslint-disable */
 type Props = {
@@ -11,9 +12,22 @@ type Props = {
   width?: string;
   height?: string;
   margin?: string;
+  fontSize?: string;
+  icon?: boolean;
 }
 
-const Button  = ({title, bgcolor, txcolor, borderR, onClick, width, height, margin}: Props) => {
+const Button  = ({
+  title, 
+  bgcolor, 
+  txcolor, 
+  borderR, 
+  onClick, 
+  width, 
+  height, 
+  margin, 
+  fontSize,
+  icon
+}: Props) => {
   return (
     <button 
       onClick={onClick}  
@@ -24,9 +38,11 @@ const Button  = ({title, bgcolor, txcolor, borderR, onClick, width, height, marg
         borderRadius: borderR,
         width: width,
         height: height,
-        margin: margin
+        margin: margin,
+        fontSize: fontSize
       }}
     >
+      {icon && <RoomOutlinedIcon />}
       {title}
     </button>
   )

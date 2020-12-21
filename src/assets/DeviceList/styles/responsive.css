@@ -20,8 +20,11 @@
 }
 
 @media (max-width: 768px) {
-  .container-header .nav-div, .header-brand, .mockup-shape {
+  .container-header .nav-div, .header-brand, .mockup-shape, .sec1-search_input {
     display: none;
+  }
+  .section1-top {
+    margin-bottom: 50px !important;
   }
   .container-header {
     margin-top: 0;

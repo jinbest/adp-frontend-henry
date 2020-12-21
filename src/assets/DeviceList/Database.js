@@ -24,6 +24,14 @@ import proudly from "./img/devicelist/proudly.png"
 // bounce image
 import bounce from "./img/bounce.png"
 
+// avatar images
+import userActive from './img/avatar/user-active.png'
+import userDeactive from './img/avatar/user-deactive.png'
+import menu from './img/avatar/menu.png'
+import store from './img/avatar/store.png'
+import storeBlue from './img/avatar/store-blue.png'
+import cancel from './img/avatar/cancel.png'
+
 const cardMobileData = [
     { img: trade, title: "TRADE", btnTitle: "Trade my Device" },
     { img: repair, title: "REPAIR", btnTitle: "Repair my Device" },
@@ -188,6 +196,44 @@ const hoursData = [
     { day: "Sunday", time: "Closed" },
 ]
 
+const avatarData = {
+    userActive: userActive,
+    userDeactive: userDeactive,
+    cancel: cancel,
+    store: store,
+    storeBlue: storeBlue,
+    menu: menu
+}
+
+const mobileNavItemData = {
+    left: [
+        {text: 'Trade', href: '#'},
+        {text: 'Repair', href: '#'},
+        {text: 'Buy', href: '#'},
+        {text: 'Protect', href: '#'},
+        {text: 'Business', href: '#'},
+        {text: 'Financing', href: '#'},
+        {text: 'Insurance', href: '#'},
+        {text: 'Find a Store', href: '#'},
+        {text: 'Conact Us', href: '#'},
+    ],
+    right: [
+        {text: 'Apple', href: '#'},
+        {text: 'Samsung', href: '#'},
+        {text: 'Google', href: '#'},
+        {text: 'LG', href: '#'},
+        {text: 'OnePlus', href: '#'},
+    ],
+}
+
+const userNavItemData = [
+    {text: 'My Account', href: '#'},
+    {text: 'Track Repair', href: '#'},
+    {text: 'File a Claim', href: '#'},
+    {text: 'Orders', href: '#'},
+    {text: 'Trade-In', href: '#'},
+]
+
 export {
     cardMobileData,
     colorPalle,
@@ -201,4 +247,7 @@ export {
     brandItemsData,
     hoursData,
     footerLink,
+    avatarData,
+    mobileNavItemData,
+    userNavItemData
 }

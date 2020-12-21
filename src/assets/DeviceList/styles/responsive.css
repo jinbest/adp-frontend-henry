@@ -1,0 +1,20 @@
+@media (max-width: 996px) {
+  .container-header .search-div {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-header .nav-div, .header-brand {
+    display: none;
+  }
+  .container-header {
+    margin-top: 0;
+  }
+  .avatar-div {
+    display: flex;
+  }
+  .mobile-search-div {
+    display: flex;
+  }
+}

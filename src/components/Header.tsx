@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Search, CustomizedMenus, Logo} from '../components'
 
 /*eslint-disable*/
@@ -37,7 +37,20 @@ type PropsHeader = {
 const Header = ({subDomain}: PropsHeader) => {
   const data = require(`../assets/${subDomain}/Database`);
   const navItemsLink = data.navItemsData, brandItemLink = data.brandItemsData;
-  const storeImg = require(`../assets/${subDomain}/img/store.png`);
+
+  const [userStatus, setUserStatus] = useState(true);
+  const [menuStatus, setMenuStatus] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState('left');
+
+  function toggleUserStatus() {
+    setUserStatus(!userStatus);
+    setMenuStatus(true);
+  }
+
+  function toggleMenuStatus() {
+    setMenuStatus(!menuStatus);
+    setUserStatus(true);
+  }
 
   return (
     <header className='header'>
@@ -67,9 +80,50 @@ const Header = ({subDomain}: PropsHeader) => {
             })}
           </ul>
           <CustomizedMenus subDomain={subDomain} />
-          <img src={storeImg.default} />
+          <img src={data.avatarData.store} />
+        </div>
+        <div className='avatar-div'>
+          {
+            userStatus ? 
+            <img src={data.avatarData.userActive} onClick={toggleUserStatus} /> :
+            <img src={data.avatarData.userDeactive} onClick={toggleUserStatus} /> 
+          }
+          <img src={data.avatarData.storeBlue} style={{height: '35px'}}/>
+          {
+            menuStatus ? 
+            <img src={data.avatarData.menu} onClick={toggleMenuStatus} /> :
+            <img src={data.avatarData.cancel} onClick={toggleMenuStatus} />
+          }
         </div>
       </div>
+      {
+        userStatus && menuStatus ? 
+        <div className='mobile-search-div'>
+          <div className='mobile-child-search'>
+            <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
+          </div>
+        </div> : 
+        <div className='mobile-menu-navbar'>
+          { 
+            userStatus ? 
+            <div>
+              {data.mobileNavItemData.left.map((item:any, index:number) => {
+                return (
+                  <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
+                )
+              })}
+            </div> : 
+            <div>
+              {data.userNavItemData.map((item:any, index:number) => {
+                return (
+                  <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
+                )
+              })}
+              <a href='#' style={{color: 'blue'}}>Sign Out</a>
+            </div>
+          }
+        </div>
+      }
     </header>
   )
 }

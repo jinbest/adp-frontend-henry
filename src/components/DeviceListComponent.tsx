@@ -13,7 +13,7 @@ const DeviceListComponent = ({img, title, content}: Props) => {
   return (
     <div className='device-list-component'>
       <img src={img} />
-      <p className='title'>{title}</p>
+      <p className='title'><b>{title}</b></p>
       <p className='content'>{content}</p>
     </div>
   )

@@ -2,6 +2,7 @@ import React from 'react';
 import {DeviceListComponent} from '../../components'
 import {Button} from '../../components'
 import { Typography, Grid, Box } from '@material-ui/core';
+
 /* eslint-disable */
 type Props = {
   subDomain?: string;

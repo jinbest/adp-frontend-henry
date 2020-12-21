@@ -2,6 +2,8 @@ import React from 'react'
 import { Box, InputBase } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
+/* eslint-disable */
+
 type Props = {
   color?: string;
   bgcolor?: string;

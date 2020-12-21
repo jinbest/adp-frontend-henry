@@ -48,6 +48,17 @@
   padding: 0 2rem;
 }
 
+.shape-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40vw;
+}
+
+.shape-div > img {
+  width: 100%;
+}
+
 .cart-mobile-container {
   margin: auto;
   max-width: 230px;
@@ -61,7 +72,7 @@
 .section1-title {
   font-style: normal;
   font-weight: 900 !important;
-  font-size: 75px !important;
+  font-size: 5.2vw !important;
   line-height: 1 !important;
   display: flex;
   align-items: center;
@@ -69,7 +80,7 @@
 }
 .section1-subtitle {
   color: black;
-  font-size: 30px !important;
+  font-size: 3.5vw !important;
   margin: 1rem 0 !important;
 }
 .section-title {

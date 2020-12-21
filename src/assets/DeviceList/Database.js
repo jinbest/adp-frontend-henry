@@ -36,6 +36,10 @@ import cancel from './img/avatar/cancel.png'
 import arrowLeft from './img/arrow/arrow-left.png'
 import arrowRight from './img/arrow/arrow-right.png'
 
+// shape images
+import cornerShape from './img/corner-shape.png'
+import mockupShape from './img/mockup-shape.png'
+
 const cardMobileData = [
     { img: trade, title: "TRADE", btnTitle: "Trade my Device" },
     { img: repair, title: "REPAIR", btnTitle: "Repair my Device" },
@@ -243,6 +247,11 @@ const arrowData = {
     arrowRight: arrowRight
 }
 
+const shapeData = {
+    cornerShape: cornerShape,
+    mockupShape: mockupShape
+}
+
 export {
     cardMobileData,
     colorPalle,
@@ -259,5 +268,6 @@ export {
     avatarData,
     mobileNavItemData,
     userNavItemData,
-    arrowData
+    arrowData,
+    shapeData
 }

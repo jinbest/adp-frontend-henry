@@ -20,4 +20,11 @@
   .container-mobile {
     display: block;
   }
+  .section1-title, .section1-subtitle {
+    text-align: center;
+    display: block;
+  }
+  .shape-div {
+    width: 60vw;
+  }
 }

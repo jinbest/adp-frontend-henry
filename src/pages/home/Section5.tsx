@@ -14,7 +14,6 @@ const Section5 = ({subDomain}: Props) => {
   return (
     <section className='sec5-Back'>
       <Box className='Container sec5-container'>
-        {/* <Button title='Our quality charter' bgcolor='#054DFA' borderR='20px'/> */}
         <Typography className='f40 bold mg-t-1'>{bounceData.title}</Typography>
         <Typography className='f18'>{bounceData.content}</Typography>
         <img className='mg-t-1 section5-img' src={bounceData.img} />

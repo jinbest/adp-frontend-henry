@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Search, CustomizedMenus, Logo} from '../components'
+import {Search, CustomizedMenus, Logo, SelectComponent} from '../components'
 
 /*eslint-disable*/
 type PropsNavItemLink = {
@@ -66,14 +66,18 @@ const Header = ({subDomain}: PropsHeader) => {
             })}
           </ul>
           <ul style={{display: 'flex', justifyContent: 'flex-end', margin: 0, padding: 0, marginRight: '40px'}}>
-            {brandItemLink.right.map((item:any, index:number) => {
+            {/* {brandItemLink.right.map((item:any, index:number) => {
               return <BrandItemLink item={item} key={index} />
-            })}
-          </ul>
+            })} */}
+            <BrandItemLink item='204.221.5898' />
+            <SelectComponent subDomain={subDomain} />
+            <BrandItemLink item='LOG IN' />
+          </ul>          
         </div>
       </div>
       <div className='container-header'>
         <Logo subDomain={subDomain} type='header' />
+        
         <div className='search-div'>
           <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
         </div>

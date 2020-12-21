@@ -13,7 +13,7 @@ const Section3 = ({subDomain}: Props) => {
   return (
     <section>
       <div className='Container'>
-        <Typography className='section-title'>
+        <Typography className='section1-title'>
           Popular Devices
         </Typography>
       </div>
@@ -22,7 +22,7 @@ const Section3 = ({subDomain}: Props) => {
           <Grid container item xs={12} spacing={2}>
             {data.popularCardData.map((item:any, index:number) => {
               return (
-                <Grid item xs={6} sm={6} md={3} style={{paddingTop: '0px'}}>
+                <Grid item xs={6} sm={6} md={3} style={{paddingTop: '0px'}} key={index}>
                   <CardPopular title={item.title} subtitle={item.subtitle} price={item.price} img={item.img} key={index} />
                 </Grid>
               )

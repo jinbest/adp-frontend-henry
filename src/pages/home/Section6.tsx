@@ -21,7 +21,7 @@ const Section6 = ({subDomain}: Props) => {
       <Grid container item xs={12} spacing={2} className='sec6-card'>
         {data.whyCustomersData.map((item:any, index:number) => {
           return (
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={4} key={index}>
               <Box className='sec6-card'>
                 <CardWhyCustomer key={index} score={item.score} days={item.days} content={item.content} reviewer={item.reviewer} />
               </Box>

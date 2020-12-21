@@ -76,4 +76,18 @@
     justify-content: center;
     margin: 20px 0;
   }
+  .device-list-component {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    min-width: 120px;
+    font-size: 12px !important;
+    height: 30px;
+  }
+  .container-header > img {
+    height: 35px;
+  }
 }

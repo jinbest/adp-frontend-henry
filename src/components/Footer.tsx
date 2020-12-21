@@ -13,8 +13,8 @@ const Footer = ({subDomain}: Props) => {
   return (
     <footer className='footer'>
       <Box className='footer-container'>
-        <Grid container item xs={12}>
-          <Grid xs={12} md={5}>
+        <Grid item container xs={12}>
+          <Grid item xs={12} md={5}>
             <Logo subDomain={subDomain} type='footer' />
             <div className='device-list-grid'>
               <div>
@@ -30,7 +30,7 @@ const Footer = ({subDomain}: Props) => {
               </div>
             </div>
           </Grid>
-          <Grid xs={12} md={7}>
+          <Grid item xs={12} md={7}>
             <Grid item container xs={12}>
               {
                 footerLink.map((links:any, index:number) => 
@@ -57,7 +57,7 @@ const Footer = ({subDomain}: Props) => {
                 <img src={data.footerImageData.buyNow} className='footer-buynow'/>
                 {data.footerImageData.others.map((item:any, index:number) => {
                   return (
-                    <div className="footer-others">
+                    <div className="footer-others" key={index}>
                       <img src={item} key={index} />
                     </div>
                   )

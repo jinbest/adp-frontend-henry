@@ -26,7 +26,7 @@ const Section4 = ({subDomain}: Props) => {
             <Grid item container xs={12}>
               {data.devicelistData.slice(0,2).map((item:any, index:number) => {
                 return (
-                  <Grid item xs={12} sm={6}>
+                  <Grid item xs={12} sm={6} key={index}>
                     <Box className='cart-device-list'>
                       <DeviceListComponent img={item.img} title={item.title} content={item.content} key={index} />
                     </Box>
@@ -47,7 +47,7 @@ const Section4 = ({subDomain}: Props) => {
             <Grid item container xs={12}>
               {data.devicelistData.slice(2,5).map((item:any, index:number) => {
                 return (
-                  <Grid item xs={12} sm={4}>
+                  <Grid item xs={12} sm={4} key={index}>
                     <Box className='cart-device-list'>
                       <DeviceListComponent img={item.img} title={item.title} content={item.content} key={index} />
                     </Box>

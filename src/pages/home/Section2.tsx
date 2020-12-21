@@ -12,14 +12,14 @@ const Section2 = ({subDomain}: Props) => {
 
   return (
     <section className='Container'>
-      <Typography className='section-title'>
+      <Typography className='section1-title'>
           What can we fix for you today
       </Typography>
       <div className='card-customized-container-desktop'>
         {
           data.cardFixData.map((item:any, index:number) => {
             return (
-              <div className='card-customized-item'>
+              <div className='card-customized-item' key={index}>
                 <CardFix title={item.title} img={item.img} key={index} />
               </div>
             )
@@ -30,7 +30,7 @@ const Section2 = ({subDomain}: Props) => {
         {
           data.cardFixData.slice(0,3).map((item:any, index:number) => {
             return (
-              <div className='card-customized-item'>
+              <div className='card-customized-item' key={index}>
                 <CardFix title={item.title} img={item.img} key={index} />
               </div>
             )
@@ -41,7 +41,7 @@ const Section2 = ({subDomain}: Props) => {
         {
           data.cardFixData.slice(3, 5).map((item:any, index:number) => {
             return (
-              <div className='card-customized-item'>
+              <div className='card-customized-item' key={index}>
                 <CardFix title={item.title} img={item.img} key={index} />
               </div>
             )
@@ -52,7 +52,7 @@ const Section2 = ({subDomain}: Props) => {
         {
           data.contentFixData.map((item:any, index:number) => {
             return (
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={12} sm={6} md={3} key={index}>
                 <Box className='cart-contentfix-container'>
                   <ContentFix title={item.title} content={item.content} key={index} />
                 </Box>

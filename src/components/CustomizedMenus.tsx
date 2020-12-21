@@ -10,7 +10,8 @@ const StyledMenu = withStyles({
     borderRadius: '15px',
     boxShadow: '0 4px 4px rgba(0,0,0,0.25)',
     overflow: 'inherit',
-    marginTop: '1px'
+    marginTop: '1px',
+    paddingBottom: '15px'
   },
 })((props: MenuProps) => (
   <Menu
@@ -85,7 +86,10 @@ const CustomizedMenus = ({subDomain}: Props) => {
               fontSize='15px'
             />
           </div>
-          <div style={{borderLeft: '1px solid gray'}}></div>
+          <div style={{
+            borderLeft: '2px solid rgba(0,0,0,0.25)', 
+            margin: '30px 10px'
+          }}></div>
           <div>
             <p className='block-title'>HOURS</p>
             <div className='hours-div'>

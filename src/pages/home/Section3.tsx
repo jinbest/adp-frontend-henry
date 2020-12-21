@@ -36,7 +36,7 @@ const Section3 = ({subDomain}: Props) => {
                   Whatever works for you.
                 </Typography>
                 <Typography className='white f24'>
-                We’ve partnered with Flexiti to offer 0% financing on repairs, devices, and accessories.
+                  We’ve partnered with Flexiti to offer 0% financing on repairs, devices, and accessories.
                 </Typography>
               </Grid>
               <Grid item sm={12} md={5}>

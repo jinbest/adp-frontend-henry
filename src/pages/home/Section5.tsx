@@ -20,11 +20,11 @@ const Section5 = ({subDomain}: Props) => {
         <img className='mg-t-1 section5-img' src={bounceData.img} />
         <Typography className='f24 bold'>{bounceData.subtitle}</Typography>
         <Box className='col_center'>
-          <Typography>{bounceData.subcontent}</Typography>
           <ul>
+            <Typography>{bounceData.subcontent}</Typography>
             {bounceData.subcontentData.map((item:any, index:number) => {
               return (
-                <li key={index}>&nbsp;&bull;&nbsp;{item}</li>
+                <li key={index}><span className='dot'>&nbsp;&bull;&nbsp;</span>{item}</li>
               )
             })}
           </ul>

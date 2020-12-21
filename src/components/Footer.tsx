@@ -22,7 +22,7 @@ const Footer = ({subDomain}: Props) => {
             <Grid item container xs={12}>
               {
                 footerLink.map((links:any, index:number) => 
-                  <Grid item xs={6} sm={3} key={index}>
+                  <Grid item xs={12} sm={3} key={index}>
                     <ul className='footer_link'>
                       <li className='link_name'>{links.name}</li>
                       {

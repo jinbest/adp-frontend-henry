@@ -3,6 +3,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Menu, { MenuProps } from '@material-ui/core/Menu';
 import {Button, Search} from '.'
 
+/* eslint-disable */
+
 const StyledMenu = withStyles({
   paper: {
     borderRadius: '15px',

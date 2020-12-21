@@ -100,52 +100,54 @@ const Header = ({subDomain}: PropsHeader) => {
           }
         </div>
       </div>
-      {
-        userStatus && menuStatus ? 
-        <div className='mobile-search-div'>
-          <div className='mobile-child-search'>
-            <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
-          </div>
-        </div> : 
-        <div className='mobile-menu-navbar'>
-          {userStatus && <div className='arrow'>
-            {mobileMenu === 'left' ? 
-              <img className='arrow-left' src={data.arrowData.arrowRight} onClick={toggleMobileMenu} /> : 
-              <img className='arrow-right' src={data.arrowData.arrowLeft} onClick={toggleMobileMenu} />
-            }
-          </div>}
-          { 
-            userStatus ? 
-            <div>
-              {mobileMenu === 'left' ? 
-                <div>
-                  {data.mobileNavItemData.left.map((item:any, index:number) => {
-                    return (
-                      <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
-                    )
-                  })}
-                </div> : 
-                <div>
-                  <p className='arrow-back' onClick={toggleMobileMenu}>Back</p>
-                  {data.mobileNavItemData.right.map((item:any, index:number) => {
-                    return (
-                      <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
-                    )
-                  })}
-                </div>
-              }
-            </div> : 
-            <div>
-              {data.userNavItemData.map((item:any, index:number) => {
-                return (
-                  <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
-                )
-              })}
-              <a href='#' style={{color: 'blue'}}>Sign Out</a>
+      <div className='container-mobile'>
+        {
+          userStatus && menuStatus ? 
+          <div className='mobile-search-div'>
+            <div className='mobile-child-search'>
+              <Search color='rgba(0,0,0,0.8)' bgcolor='white' border='rgba(0,0,0,0.2)'/>
             </div>
-          }
-        </div>
-      }
+          </div> : 
+          <div className='mobile-menu-navbar'>
+            {userStatus && <div className='arrow'>
+              {mobileMenu === 'left' ? 
+                <img className='arrow-left' src={data.arrowData.arrowRight} onClick={toggleMobileMenu} /> : 
+                <img className='arrow-right' src={data.arrowData.arrowLeft} onClick={toggleMobileMenu} />
+              }
+            </div>}
+            { 
+              userStatus ? 
+              <div>
+                {mobileMenu === 'left' ? 
+                  <div>
+                    {data.mobileNavItemData.left.map((item:any, index:number) => {
+                      return (
+                        <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
+                      )
+                    })}
+                  </div> : 
+                  <div>
+                    <p className='arrow-back' onClick={toggleMobileMenu}>Back</p>
+                    {data.mobileNavItemData.right.map((item:any, index:number) => {
+                      return (
+                        <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
+                      )
+                    })}
+                  </div>
+                }
+              </div> : 
+              <div>
+                {data.userNavItemData.map((item:any, index:number) => {
+                  return (
+                    <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
+                  )
+                })}
+                <a href='#' style={{color: 'blue'}}>Sign Out</a>
+              </div>
+            }
+          </div>
+        }
+      </div>
     </header>
   )
 }

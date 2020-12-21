@@ -172,3 +172,7 @@
   font-weight: bold;
   margin-left: 10px;
 }
+
+.container-mobile {
+  display: none;
+}

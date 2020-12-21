@@ -17,4 +17,7 @@
   .mobile-search-div {
     display: flex;
   }
+  .container-mobile {
+    display: block;
+  }
 }

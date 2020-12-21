@@ -32,6 +32,10 @@ import store from './img/avatar/store.png'
 import storeBlue from './img/avatar/store-blue.png'
 import cancel from './img/avatar/cancel.png'
 
+// arrow images
+import arrowLeft from './img/arrow/arrow-left.png'
+import arrowRight from './img/arrow/arrow-right.png'
+
 const cardMobileData = [
     { img: trade, title: "TRADE", btnTitle: "Trade my Device" },
     { img: repair, title: "REPAIR", btnTitle: "Repair my Device" },
@@ -234,6 +238,11 @@ const userNavItemData = [
     {text: 'Trade-In', href: '#'},
 ]
 
+const arrowData = {
+    arrowLeft: arrowLeft,
+    arrowRight: arrowRight
+}
+
 export {
     cardMobileData,
     colorPalle,
@@ -249,5 +258,6 @@ export {
     footerLink,
     avatarData,
     mobileNavItemData,
-    userNavItemData
+    userNavItemData,
+    arrowData
 }

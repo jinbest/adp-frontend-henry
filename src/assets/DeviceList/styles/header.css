@@ -76,6 +76,7 @@
   display: none;
   align-items: center;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .avatar-div > img {
@@ -138,4 +139,36 @@
   text-decoration: none;
   margin: 10px 0;
   color: black;
+}
+
+.mobile-menu-navbar .mobile-item:hover {
+  color: #8d8d8d;
+}
+
+.arrow {
+  width: 10px;
+  position: absolute;
+}
+
+.arrow > img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 120px;
+  top: 80px;
+}
+
+.arrow-right {
+  position: absolute;
+  left: -10px;
+  top: 15px;
+}
+
+.arrow-back {
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
 }

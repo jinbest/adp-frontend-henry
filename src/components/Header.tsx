@@ -52,6 +52,10 @@ const Header = ({subDomain}: PropsHeader) => {
     setUserStatus(true);
   }
 
+  function toggleMobileMenu() {
+    mobileMenu === 'left' ? setMobileMenu('right') : setMobileMenu('left');
+  }
+
   return (
     <header className='header'>
       <div className='header-brand'>
@@ -104,14 +108,32 @@ const Header = ({subDomain}: PropsHeader) => {
           </div>
         </div> : 
         <div className='mobile-menu-navbar'>
+          {userStatus && <div className='arrow'>
+            {mobileMenu === 'left' ? 
+              <img className='arrow-left' src={data.arrowData.arrowRight} onClick={toggleMobileMenu} /> : 
+              <img className='arrow-right' src={data.arrowData.arrowLeft} onClick={toggleMobileMenu} />
+            }
+          </div>}
           { 
             userStatus ? 
             <div>
-              {data.mobileNavItemData.left.map((item:any, index:number) => {
-                return (
-                  <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
-                )
-              })}
+              {mobileMenu === 'left' ? 
+                <div>
+                  {data.mobileNavItemData.left.map((item:any, index:number) => {
+                    return (
+                      <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
+                    )
+                  })}
+                </div> : 
+                <div>
+                  <p className='arrow-back' onClick={toggleMobileMenu}>Back</p>
+                  {data.mobileNavItemData.right.map((item:any, index:number) => {
+                    return (
+                      <a key={index} className='mobile-item' href={item.href}>{item.text}</a>
+                    )
+                  })}
+                </div>
+              }
             </div> : 
             <div>
               {data.userNavItemData.map((item:any, index:number) => {

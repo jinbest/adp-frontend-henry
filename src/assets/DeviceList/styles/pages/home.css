@@ -115,6 +115,7 @@
 }
 .cart-fix-container {
   margin: 1rem;
+  min-width: 100px;
 }
 .cart-contentfix-container {
   margin-top: 2rem;

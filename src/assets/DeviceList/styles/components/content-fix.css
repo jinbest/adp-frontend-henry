@@ -18,8 +18,8 @@
 
 .horzon-line {
   text-align: left;
-  margin-right: auto;
   margin: 5px 0;
   width: 50px;
-  border: solid 3px #054DFA;
+  border: none;
+  border-bottom: solid 6px #054DFA;
 }

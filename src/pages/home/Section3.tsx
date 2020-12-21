@@ -28,7 +28,7 @@ const Section3 = ({subDomain}: Props) => {
               )
             })}
           </Grid>
-          <Box className='pd-t-4'>
+          <Box className='pd-t-5'>
             <Grid container item xs={12} spacing={3}>
               <Grid item sm={12} md={7}>
                 <Typography className='section-title white'>

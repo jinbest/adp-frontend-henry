@@ -19,19 +19,17 @@ const Section3 = ({subDomain}: Props) => {
       </div>
       <div className='section3-back'>
         <div className='Container'>
-          <Grid container item xs={12}>
+          <Grid container item xs={12} spacing={3}>
             {data.popularCardData.map((item:any, index:number) => {
               return (
-                <Grid item xs={6} sm={3} spacing={2}>
-                  <Box className='cart-popular-container'>
-                    <CardPopular title={item.title} subtitle={item.subtitle} price={item.price} img={item.img} key={index} />
-                  </Box>
+                <Grid item xs={6} sm={3}>
+                  <CardPopular title={item.title} subtitle={item.subtitle} price={item.price} img={item.img} key={index} />
                 </Grid>
               )
             })}
           </Grid>
           <Box className='pd-t-4'>
-            <Grid container item xs={12}>
+            <Grid container item xs={12} spacing={3}>
               <Grid item sm={12} md={7}>
                 <Typography className='section-title white'>
                   Buy now. Pay later. <br/>

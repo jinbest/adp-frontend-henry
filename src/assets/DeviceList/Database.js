@@ -40,6 +40,15 @@ import arrowRight from './img/arrow/arrow-right.png'
 import cornerShape from './img/corner-shape.png'
 import mockupShape from './img/mockup-shape.png'
 
+// footer images
+import buyNow from './img/footer/buy-now.png'
+import visa from './img/footer/visa.png'
+import round from './img/footer/round.png'
+import amex from './img/footer/amex.png'
+import interactive from './img/footer/interactive.png'
+import paypal from './img/footer/paypal.png'
+import deviceListImg from './img/footer/device-list.png'
+
 const cardMobileData = [
     { img: trade, title: "TRADE", btnTitle: "Trade my Device" },
     { img: repair, title: "REPAIR", btnTitle: "Repair my Device" },
@@ -252,6 +261,14 @@ const shapeData = {
     mockupShape: mockupShape
 }
 
+const footerImageData = {
+    buyNow: buyNow,
+    deviceList: deviceListImg,
+    others: [
+        visa, round, amex, interactive, paypal
+    ]
+}
+
 export {
     cardMobileData,
     colorPalle,
@@ -269,5 +286,6 @@ export {
     mobileNavItemData,
     userNavItemData,
     arrowData,
-    shapeData
+    shapeData,
+    footerImageData
 }

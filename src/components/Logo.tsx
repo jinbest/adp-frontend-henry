@@ -19,10 +19,10 @@ const Logo = ({subDomain, type}: Props) => {
       </Link>
     </Router> : 
     <Router>
-    <Link to='/'>
-      <img className='logo' src={logoFooterImg.default} alt='logo'/>
-    </Link>
-  </Router>
+      <Link to='/'>
+        <img className='logo' src={logoFooterImg.default} alt='logo'/>
+      </Link>
+    </Router>
   )
 }
 

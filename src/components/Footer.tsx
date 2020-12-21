@@ -16,7 +16,7 @@ const Footer = ({subDomain}: Props) => {
         <Grid container item xs={12}>
           <Grid xs={12} md={4}>
             <Logo subDomain={subDomain} type='footer' />
-            <div>
+            <div style={{marginTop: '20px'}}>
               Canada's mibile device marketplace <br/>
               (204) 221-5898 | sales@devicelist.co <br/>
               2020 Corydon Ave, Unit F Winnipe, MB

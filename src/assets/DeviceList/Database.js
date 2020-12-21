@@ -178,6 +178,16 @@ const footerLink = [
     },
 ]
 
+const hoursData = [
+    { day: "Monday", time: "9:00 a.m. - 5:00 p.m." },
+    { day: "Tuesday", time: "9:00 a.m. - 5:00 p.m." },
+    { day: "Wednesday", time: "9:00 a.m. - 5:00 p.m." },
+    { day: "Thursday", time: "9:00 a.m. - 5:00 p.m." },
+    { day: "Friday", time: "9:00 a.m. - 5:00 p.m." },
+    { day: "Saturday", time: "11:00 a.m. - 4:00 p.m." },
+    { day: "Sunday", time: "Closed" },
+]
+
 export {
     cardMobileData,
     colorPalle,
@@ -189,5 +199,6 @@ export {
     whyCustomersData,
     navItemsData,
     brandItemsData,
+    hoursData,
     footerLink,
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Grid, Box } from '@material-ui/core';
-/* eslint-disable */
+import {Logo} from '../components'
 
+/* eslint-disable */
 type Props = {
   subDomain?: string;
 }
@@ -14,9 +15,12 @@ const Footer = ({subDomain}: Props) => {
       <Box className='footer-container'>
         <Grid container item xs={12}>
           <Grid xs={12} md={4}>
-            Canada's mibile device marketplace <br/>
-            (204) 221-5898 | sales@devicelist.co <br/>
-            2020 Corydon Ave, Unit F Winnipe, MB
+            <Logo subDomain={subDomain} type='footer' />
+            <div>
+              Canada's mibile device marketplace <br/>
+              (204) 221-5898 | sales@devicelist.co <br/>
+              2020 Corydon Ave, Unit F Winnipe, MB
+            </div>
           </Grid>
           <Grid xs={12} md={8}>
             <Grid item container xs={12}>

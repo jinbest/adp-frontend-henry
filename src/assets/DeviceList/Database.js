@@ -128,10 +128,10 @@ const colorPalle = {
 }
 
 const navItemsData = [
-    { href: "trade", text: "Trade", isActive: false },
-    { href: "repair", text: "Repair", isActive: false },
-    { href: "buy", text: "Buy", isActive: false },
-    { href: "protect", text: "Protect", isActive: false },
+    { href: "#", text: "Trade", isActive: false },
+    { href: "#", text: "Repair", isActive: false },
+    { href: "#", text: "Buy", isActive: false },
+    { href: "#", text: "Protect", isActive: false },
 ]
 
 const brandItemsData = {

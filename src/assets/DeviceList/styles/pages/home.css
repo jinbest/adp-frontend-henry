@@ -219,11 +219,17 @@ p {
   .mobile {
     display: block;
     margin-top: 3rem;
+    margin-bottom: 2rem !important;
   }
   .section4-button {
     margin: auto;
     text-align: center;
     margin-top: 2rem;
+  }
+  .section4-title {
+    text-align: center;
+    margin: auto !important;
+    margin-bottom: 2rem !important;
   }
 }
 

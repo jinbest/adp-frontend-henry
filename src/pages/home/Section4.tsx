@@ -14,12 +14,15 @@ const Section4 = ({subDomain}: Props) => {
     <section className='Container'>
       <Box className='mg-t-7'>
         <Grid container item xs={12}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <Typography className='f40 bold section4-title'>
               Welcome to DeviceList, Canada’s mobile device marketplace
             </Typography>
+            <Box className='section4-button mobile'>
+              <Button title='Our quality charter' bgcolor='#054DFA' borderR='20px'/>
+            </Box>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={12} md={6}>
             <Grid item container xs={12}>
               {data.devicelistData.slice(0,2).map((item:any, index:number) => {
                 return (
@@ -39,8 +42,8 @@ const Section4 = ({subDomain}: Props) => {
           </Grid>
         </Grid>
         <Grid container item xs={12}>
-          <Grid item xs={12} sm={3} ></Grid>
-          <Grid item xs={12} sm={9} >
+          <Grid item xs={12} sm={12} md={3}></Grid>
+          <Grid item xs={12} sm={12} md={9}>
             <Grid item container xs={12}>
               {data.devicelistData.slice(2,5).map((item:any, index:number) => {
                 return (
@@ -52,11 +55,6 @@ const Section4 = ({subDomain}: Props) => {
                 )
               })}
             </Grid>
-          </Grid>
-          <Grid item xs={12}>
-            <Box className='section4-button mobile'>
-              <Button title='Our quality charter' bgcolor='#054DFA' borderR='20px'/>
-            </Box>
           </Grid>
         </Grid>
       </Box>

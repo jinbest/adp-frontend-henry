@@ -195,11 +195,12 @@ p {
   padding-top: 1rem;
 }
 .sec6-container {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .sec6-card {
-  margin-left: 0px !important;
+  margin: auto;
   padding-top: 3rem;
+  max-width: 500px;
 }
 
 @media (max-width: 1024px) {

@@ -5,7 +5,7 @@
   flex-direction: column;
   text-align: left;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: -10.1842px -10.1842px 30.5526px #FFFFFF, 10.1842px 10.1842px 30.5526px rgba(174, 174, 192, 0.4);
 }
 
 .card-why-customer .score-div {
@@ -30,4 +30,7 @@
 
 .card-why-customer .reviewer {
   margin-bottom: 20px;
+}
+.MuiRating-root {
+  color: red !important;
 }
